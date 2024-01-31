@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 @font-face {
     font-family: workSans-regular;
     src: url(WorkSans-Regular.woff);
@@ -31,11 +29,6 @@ li {
     list-style: none;
 }
 
-section {
-    width: 1440px;
-    margin: auto;
-}
-
 .container {
     width: 1320px;
     margin: 0 auto;
@@ -48,8 +41,6 @@ section {
 }
 
 body {
-    background-color: black;
-    /* font-family: 'Work Sans', sans-serif; */
     font-family: workSans-regular;
 }
 
@@ -98,27 +89,40 @@ body {
 .links {
     margin-left: auto;
 
-    a {
+    a:hover {
+        color: var(--yellow);
+    }
+
+    #link3 {
         padding: 12px 30px;
-    }
-    :last-child {
-        /* border: solid 2px var(--black); */
-        /* background-color: var(--yellow); */
         border-radius: 10px;
-        border: solid 1px var(--grey);
-    }
-    
-    a:last-child:hover {
         border: solid 2px var(--black);
         background-color: var(--yellow);
+        color: var(--black);
+        margin-left: 30px;
     }
+
+    /* #link3:hover {
+        border: solid 2px var(--black);
+        background-color: var(--yellow);
+        color: var(--black);
+    } */
+}
+
+#link1::after {
+    content: "";
+    display: inline-block;
+    height: 26px;
+    width: 2px;
+    background-color: var(--grey);
+    margin: 0 30px;
+    vertical-align: middle;
 }
 
 /* Banner */
 
 .banner {
     background-color: var(--cream);
-    /* height: 900px; */
 }
 
 /* Category */
@@ -219,16 +223,16 @@ body {
 
     a {
         padding: 14px 28px;
-        border: solid 1px var(--black);
-        /* background-color: var(--yellow); */
+        border: solid 2px var(--black);
+        background-color: var(--yellow);
         border-radius: 10px;
         font-size: 16px;
         font-family: workSans-medium;
     }
     
-    a:hover {
+    /* a:hover {
         background-color: var(--yellow);
-    }
+    } */
 }
 
 
